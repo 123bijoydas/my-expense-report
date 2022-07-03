@@ -1,27 +1,14 @@
+
+// https://my-expense-report.herokuapp.com/   -------------->ebsite linki
+
+
+
 import React, {useState,useEffect}from 'react';
 import NewExpense from './components/NewExpenses/NewExpenses';
 import Expenses from "./components/Expenses/Expenses";
-let DUMMY_EXPENSE=[
-
-        // {
-        //     id:'e1',
-        //     title:'schoole fee',
-        //     amount: 250,
-        //     date: new Date(2022, 4, 23)
-        // },
-        // {
-        //     id:'e2',
-        //     title:'books',
-        //     amount: 200,
-        //     date: new Date(2022, 3, 23)
-        // },
-        // {
-        //     id:'e3',
-        //     title:'house rent',
-        //     amount: 350,
-        //     date: new Date(2022, 6, 23)
-        // }
-];
+// const express=require("express");
+// const port=process.env.PORT||3000
+let DUMMY_EXPENSE=[];
 const App=()=> {
     // let expenses=[
 
@@ -31,18 +18,6 @@ const App=()=> {
     //         amount: 250,
     //         date: new Date(2022, 4, 23)
     //     },
-    //     {
-    //         id:'e2',
-    //         title:'books',
-    //         amount: 200,
-    //         date: new Date(2022, 3, 23)
-    //     },
-    //     {
-    //         id:'e3',
-    //         title:'house rent',
-    //         amount: 350,
-    //         date: new Date(2022, 6, 23)
-    //     }
     // ];
     const [expenses,setExpenses]=useState(DUMMY_EXPENSE);
 
@@ -97,4 +72,12 @@ const App=()=> {
       </div>
     );
 }
+
+// App.listen(port,()=>{
+//     console.log(`connection is setup ${port}`)
+// })
 export default App;
+
+
+
+// https://my-expense-report.herokuapp.com/   -------------->ebsite link
